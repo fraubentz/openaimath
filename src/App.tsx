@@ -196,8 +196,8 @@ export const App: React.FC = () => {
                     }}
                     className={`px-3 py-1.5 rounded-lg font-medium flex items-center gap-1.5 transition-all min-h-[36px] ${
                       formalFilter === 'trace'
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-slate-800 text-purple-300 hover:text-purple-200 hover:bg-slate-700/60'
+                        ? 'bg-slate-900 dark:bg-purple-600 text-white shadow-xs'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-purple-300 hover:text-black dark:hover:text-purple-200 border border-slate-300 dark:border-transparent'
                     }`}
                   >
                     <BrainCircuit className="w-3.5 h-3.5" aria-hidden="true" />

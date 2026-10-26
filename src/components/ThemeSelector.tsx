@@ -60,9 +60,9 @@ export const ThemeSelector: React.FC<ThemeSelectorProps> = ({ className = '' }) 
         onClick={() => applyTheme('light')}
         aria-pressed={theme === 'light'}
         aria-label="Light mode"
-        className={`flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
+        className={`flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-medium transition-all ${
           theme === 'light'
-            ? 'bg-amber-500/20 text-amber-300 font-semibold border border-amber-500/40 shadow-xs'
+            ? 'bg-amber-100 text-amber-900 font-bold border border-amber-300 shadow-xs'
             : 'text-slate-400 hover:text-slate-200'
         }`}
         title="Light Mode (Academic Paper)"

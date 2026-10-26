@@ -124,12 +124,12 @@ export const FamilyModal: React.FC<FamilyModalProps> = ({
 
           {/* Reasoning trace callout if available */}
           {family.reasoningTrace && (
-            <div className="bg-purple-950/20 border border-purple-800/40 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="bg-slate-100 dark:bg-purple-950/20 border border-slate-300 dark:border-purple-800/40 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs">
               <div>
-                <h4 className="text-sm font-semibold text-purple-200">
+                <h4 className="text-sm font-bold text-slate-900 dark:text-purple-200">
                   Model Reasoning Trace Published
                 </h4>
-                <p className="text-xs text-purple-300/80 mt-0.5">
+                <p className="text-xs text-slate-600 dark:text-purple-300/80 mt-0.5">
                   {family.reasoningTrace.subject} (~3 hours ChatGPT Pro compute)
                 </p>
               </div>
@@ -137,7 +137,7 @@ export const FamilyModal: React.FC<FamilyModalProps> = ({
                 href={`https://github.com/fraubentz/openai-math-diarrhea/blob/main/${family.reasoningTrace.pdf}`}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-medium px-3.5 py-2 rounded-lg bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-white transition-colors whitespace-nowrap self-start sm:self-auto min-h-[38px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 dark:bg-purple-600 dark:hover:bg-purple-500 text-white transition-colors whitespace-nowrap self-start sm:self-auto min-h-[38px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
               >
                 <span>View Trace PDF</span>
                 <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />

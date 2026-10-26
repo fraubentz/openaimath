@@ -58,23 +58,23 @@ export const FamilyCard: React.FC<FamilyCardProps> = ({ family, onSelect }) => {
             )}
             {family.reasoningTrace && (
               <span
-                className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 flex items-center gap-1"
+                className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-purple-500/10 border border-slate-300 dark:border-purple-500/20 text-slate-700 dark:text-purple-300 flex items-center gap-1"
                 title="Reasoning trace published"
               >
-                <BrainCircuit className="w-3 h-3" aria-hidden="true" />
+                <BrainCircuit className="w-3 h-3 text-slate-500 dark:text-purple-400" aria-hidden="true" />
                 <span>Trace</span>
               </span>
             )}
           </div>
         </div>
 
-        {/* Title */}
-        <h3 className="text-base font-semibold text-slate-100 group-hover:text-indigo-200 transition-colors line-clamp-2">
+        {/* Title: Strong commanding black text */}
+        <h3 className="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-black dark:group-hover:text-indigo-200 transition-colors line-clamp-2">
           <MathText text={family.title} />
         </h3>
 
-        {/* Summary */}
-        <p className="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+        {/* Summary: High-contrast crisp text */}
+        <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 leading-relaxed">
           <MathText text={family.summary} />
         </p>
       </div>

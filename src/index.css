@@ -18,7 +18,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
     padding-bottom: env(safe-area-inset-bottom, 0px);
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
 
   /* Accessible focus rings */
@@ -49,7 +49,7 @@ pre, code {
 }
 
 /* ==========================================================================
-   1. Light Mode Styles (Academic Paper Palette)
+   1. Light Mode Styles (High-Contrast Academic Publishing Palette)
    ========================================================================== */
 html.theme-light {
   color-scheme: light;
@@ -60,22 +60,29 @@ html.theme-light body {
   color: #0f172a;
 }
 
+/* Header & Structural Surfaces */
+html.theme-light header {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-bottom-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.04);
+}
+
 html.theme-light .bg-slate-950 {
   background-color: #f8fafc !important;
 }
 
-html.theme-light .bg-slate-900 {
-  background-color: #ffffff !important;
-}
-
+html.theme-light .bg-slate-900,
 html.theme-light .bg-slate-900\/90,
 html.theme-light .bg-slate-900\/95,
+html.theme-light .bg-slate-900\/80,
 html.theme-light .bg-slate-900\/70,
 html.theme-light .bg-slate-900\/60,
 html.theme-light .bg-slate-900\/40 {
   background-color: #ffffff !important;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
 }
 
+/* Sub-panels, wells, code backgrounds */
 html.theme-light .bg-slate-950\/80,
 html.theme-light .bg-slate-950\/70,
 html.theme-light .bg-slate-950\/60,
@@ -83,54 +90,214 @@ html.theme-light .bg-slate-950\/40 {
   background-color: #f1f5f9 !important;
 }
 
+/* Interactive chips and neutral buttons */
 html.theme-light .bg-slate-800 {
-  background-color: #e2e8f0 !important;
+  background-color: #f1f5f9 !important;
   color: #1e293b !important;
+  border: 1px solid #e2e8f0 !important;
 }
 
 html.theme-light .bg-slate-800\/80,
 html.theme-light .bg-slate-800\/60 {
-  background-color: #eef2f6 !important;
+  background-color: #f8fafc !important;
   color: #334155 !important;
+  border: 1px solid #e2e8f0 !important;
 }
 
 html.theme-light .hover\:bg-slate-800:hover,
+html.theme-light .hover\:bg-slate-750:hover,
 html.theme-light .hover\:bg-slate-700:hover,
-html.theme-light .hover\:bg-slate-750:hover {
+html.theme-light .active\:bg-slate-700:active {
   background-color: #e2e8f0 !important;
+  color: #0f172a !important;
 }
 
+html.theme-light .hover\:bg-slate-800\/60:hover {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+/* Active discipline & filter chips: deep black for sharp contrast */
+html.theme-light .bg-slate-700 {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+}
+
+/* Crisp Structural Borders */
 html.theme-light .border-slate-800,
 html.theme-light .border-slate-800\/80,
 html.theme-light .border-slate-800\/60,
+html.theme-light .border-slate-800\/40,
+html.theme-light .border-slate-700,
 html.theme-light .border-slate-700\/80,
 html.theme-light .border-slate-900 {
   border-color: #e2e8f0 !important;
 }
 
+html.theme-light .hover\:border-indigo-500\/50:hover,
+html.theme-light .hover\:border-emerald-500\/50:hover,
+html.theme-light .hover\:border-purple-500\/50:hover {
+  border-color: #0f172a !important;
+}
+
+/* ==========================================================================
+   DE-INTENSIFIED PURPLE & SHARP BLACK TEXT OVERRIDES
+   ========================================================================== */
+
+/* 1. All Headings & Titles: Pure commanding black #0f172a (100% standout) */
+html.theme-light h1,
+html.theme-light h2,
+html.theme-light h3,
+html.theme-light h4,
 html.theme-light .text-white,
 html.theme-light .text-slate-100 {
   color: #0f172a !important;
+  font-weight: 700;
 }
 
+/* Prevent hover from washing out card titles to pale purple/indigo */
+html.theme-light .group:hover .group-hover\:text-indigo-200,
+html.theme-light .group:hover .group-hover\:text-purple-200,
+html.theme-light .group:hover h3,
+html.theme-light .group:hover h4 {
+  color: #0f172a !important;
+}
+
+/* 2. Body Text: Deep crisp slate */
 html.theme-light .text-slate-200,
 html.theme-light .text-slate-300 {
   color: #1e293b !important;
 }
 
 html.theme-light .text-slate-400 {
-  color: #475569 !important;
+  color: #334155 !important;
 }
 
 html.theme-light .text-slate-500,
 html.theme-light .text-slate-600 {
-  color: #64748b !important;
+  color: #475569 !important;
 }
 
-html.theme-light .katex {
+/* 3. Toned-Down Purple Buttons & Accents: Replaced with elegant slate-black & subtle lavender */
+html.theme-light .bg-purple-600,
+html.theme-light .bg-purple-600\/80,
+html.theme-light .hover\:bg-purple-600:hover,
+html.theme-light .hover\:bg-purple-500:hover {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* Filter button active states in light mode */
+html.theme-light button.bg-purple-600 {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+
+/* Reasoning Hero Banner in Light Mode: Neutral crisp white card, NOT glaring purple */
+html.theme-light .bg-gradient-to-r.from-purple-950\/40,
+html.theme-light .bg-purple-950\/20,
+html.theme-light .bg-purple-950 {
+  background-image: none !important;
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+html.theme-light .border-purple-800\/40,
+html.theme-light .border-purple-500\/30 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Hero compute spec boxes in light mode */
+html.theme-light .bg-purple-600\/20 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
   color: #0f172a !important;
 }
 
+/* Sub-text inside reasoning callouts: crisp dark slate, NOT pale purple */
+html.theme-light .text-purple-300,
+html.theme-light .text-purple-300\/80,
+html.theme-light .text-purple-200 {
+  color: #334155 !important;
+}
+
+/* Reasoning Trace Badges: Quiet, gentle, non-glaring lavender-slate */
+html.theme-light .bg-purple-500\/10,
+html.theme-light .bg-purple-500\/20 {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+  font-weight: 600;
+}
+
+/* Trace icon in badge */
+html.theme-light .bg-purple-500\/10 svg,
+html.theme-light .bg-purple-500\/20 svg {
+  color: #64748b !important;
+}
+
+/* Formalization & Category Badges */
+html.theme-light .bg-indigo-500\/10,
+html.theme-light .bg-indigo-500\/20,
+html.theme-light .bg-indigo-950,
+html.theme-light .bg-indigo-950\/60 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+html.theme-light .text-indigo-300,
+html.theme-light .text-indigo-400 {
+  color: #1e293b !important;
+  font-weight: 600;
+}
+
+html.theme-light .bg-emerald-500\/10,
+html.theme-light .bg-emerald-500\/20 {
+  background-color: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+  color: #065f46 !important;
+}
+
+html.theme-light .text-emerald-300,
+html.theme-light .text-emerald-400 {
+  color: #047857 !important;
+  font-weight: 600;
+}
+
+html.theme-light .bg-amber-500\/10,
+html.theme-light .bg-amber-500\/20 {
+  background-color: #fffbeb !important;
+  border-color: #fde68a !important;
+  color: #92400e !important;
+}
+
+html.theme-light .text-amber-300,
+html.theme-light .text-amber-400 {
+  color: #b45309 !important;
+}
+
+html.theme-light .bg-rose-500\/10,
+html.theme-light .bg-rose-500\/20 {
+  background-color: #fff1f2 !important;
+  border-color: #fecdd3 !important;
+  color: #9f1239 !important;
+}
+
+html.theme-light .text-rose-300,
+html.theme-light .text-rose-400 {
+  color: #be123c !important;
+}
+
+/* KaTeX Formulas Typography: Sharp Pure Pitch Black */
+html.theme-light .katex {
+  color: #000000 !important;
+  font-weight: 500;
+}
+
+/* Search and Input Fields */
 html.theme-light input {
   background-color: #ffffff !important;
   color: #0f172a !important;
@@ -138,9 +305,52 @@ html.theme-light input {
 }
 
 html.theme-light input::placeholder {
-  color: #94a3b8 !important;
+  color: #64748b !important;
 }
 
+/* Top Disclaimer Banner in Light Mode */
+html.theme-light aside[aria-label="Fork disclaimer and upstream synchronization status"] {
+  background-color: #f8fafc !important;
+  border-bottom-color: #e2e8f0 !important;
+  color: #334155 !important;
+}
+
+html.theme-light aside[aria-label="Fork disclaimer and upstream synchronization status"] strong {
+  color: #0f172a !important;
+}
+
+html.theme-light aside[aria-label="Fork disclaimer and upstream synchronization status"] .text-slate-400,
+html.theme-light aside[aria-label="Fork disclaimer and upstream synchronization status"] .text-slate-300 {
+  color: #475569 !important;
+}
+
+/* Code Blocks & Verification Simulator in Light Mode */
+html.theme-light pre {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html.theme-light pre code {
+  color: #0f172a !important;
+}
+
+html.theme-light .hover\:bg-slate-900\/60:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Simulator terminal banner */
+html.theme-light .bg-black\/90 {
+  background-color: #0f172a !important;
+  color: #34d399 !important;
+}
+
+/* Modal Backdrop */
+html.theme-light .bg-black\/75 {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
+
+/* Light Mode Scrollbars */
 html.theme-light ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
