@@ -1,0 +1,5 @@
+{
+  "name": "OpenAI Math Manuscripts & Lean 4 Formalization Explorer",
+  "description": "Interactive research portal and explorer for 719 mathematical manuscripts across 372 families and 416 Lean 4 formal verification comparator challenges.",
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

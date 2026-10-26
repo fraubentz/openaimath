@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build and dist outputs
+dist
+dist-ssr
+*.local
+
+# Python cache & audit outputs
+__pycache__/
+*.pyc
+phase1_out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor and OS
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Lock files to avoid manager churn
+bun.lock
+bun.lockb
+package-lock.json.bak
+
+# Large upstream raw proofs and preprints cache (streamed via GitHub CDN)
+upstream/
+preprints/
+*.pdf
+lean/.lake/
+lean/lake-packages/

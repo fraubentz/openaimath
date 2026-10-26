@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+  }
+
+  body {
+    background-color: #030712;
+    color: #f3f4f6;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Accessible focus rings */
+  :focus-visible {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom mathematical code styling and scrollbar */
+pre, code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ==========================================================================
+   1. Light Mode Styles (Academic Paper Palette)
+   ========================================================================== */
+html.theme-light {
+  color-scheme: light;
+}
+
+html.theme-light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html.theme-light .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+
+html.theme-light .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+
+html.theme-light .bg-slate-900\/90,
+html.theme-light .bg-slate-900\/95,
+html.theme-light .bg-slate-900\/70,
+html.theme-light .bg-slate-900\/60,
+html.theme-light .bg-slate-900\/40 {
+  background-color: #ffffff !important;
+}
+
+html.theme-light .bg-slate-950\/80,
+html.theme-light .bg-slate-950\/70,
+html.theme-light .bg-slate-950\/60,
+html.theme-light .bg-slate-950\/40 {
+  background-color: #f1f5f9 !important;
+}
+
+html.theme-light .bg-slate-800 {
+  background-color: #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+html.theme-light .bg-slate-800\/80,
+html.theme-light .bg-slate-800\/60 {
+  background-color: #eef2f6 !important;
+  color: #334155 !important;
+}
+
+html.theme-light .hover\:bg-slate-800:hover,
+html.theme-light .hover\:bg-slate-700:hover,
+html.theme-light .hover\:bg-slate-750:hover {
+  background-color: #e2e8f0 !important;
+}
+
+html.theme-light .border-slate-800,
+html.theme-light .border-slate-800\/80,
+html.theme-light .border-slate-800\/60,
+html.theme-light .border-slate-700\/80,
+html.theme-light .border-slate-900 {
+  border-color: #e2e8f0 !important;
+}
+
+html.theme-light .text-white,
+html.theme-light .text-slate-100 {
+  color: #0f172a !important;
+}
+
+html.theme-light .text-slate-200,
+html.theme-light .text-slate-300 {
+  color: #1e293b !important;
+}
+
+html.theme-light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.theme-light .text-slate-500,
+html.theme-light .text-slate-600 {
+  color: #64748b !important;
+}
+
+html.theme-light .katex {
+  color: #0f172a !important;
+}
+
+html.theme-light input {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.theme-light input::placeholder {
+  color: #94a3b8 !important;
+}
+
+html.theme-light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+html.theme-light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+html.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ==========================================================================
+   2. Eco-Friendly OLED Mode (Pure #000000 Pitch Black)
+   ========================================================================== */
+html.theme-oled {
+  color-scheme: dark;
+}
+
+html.theme-oled body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+html.theme-oled .bg-slate-950 {
+  background-color: #000000 !important;
+}
+
+html.theme-oled .bg-slate-900 {
+  background-color: #000000 !important;
+}
+
+html.theme-oled .bg-slate-900\/90,
+html.theme-oled .bg-slate-900\/95,
+html.theme-oled .bg-slate-900\/70,
+html.theme-oled .bg-slate-900\/60,
+html.theme-oled .bg-slate-900\/40 {
+  background-color: #000000 !important;
+}
+
+html.theme-oled .bg-slate-950\/80,
+html.theme-oled .bg-slate-950\/70,
+html.theme-oled .bg-slate-950\/60,
+html.theme-oled .bg-slate-950\/40 {
+  background-color: #050505 !important;
+}
+
+html.theme-oled .border-slate-800,
+html.theme-oled .border-slate-800\/80,
+html.theme-oled .border-slate-800\/60,
+html.theme-oled .border-slate-700\/80,
+html.theme-oled .border-slate-900 {
+  border-color: #222225 !important;
+}
+
+html.theme-oled .bg-slate-800 {
+  background-color: #101012 !important;
+}
+
+html.theme-oled .hover\:bg-slate-900:hover {
+  background-color: #08080a !important;
+}
+
+html.theme-oled .hover\:bg-slate-800:hover {
+  background-color: #18181c !important;
+}
+
+html.theme-oled input {
+  background-color: #000000 !important;
+  border-color: #27272a !important;
+}
+
+html.theme-oled ::-webkit-scrollbar-track {
+  background: #000000;
+}
+html.theme-oled ::-webkit-scrollbar-thumb {
+  background: #1c1c1f;
+}
+
+/* Reduced motion preference support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

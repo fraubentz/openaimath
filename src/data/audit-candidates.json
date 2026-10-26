@@ -1,0 +1,89 @@
+[
+  {
+    "term": "stabilization-trace cancellation",
+    "count": 14,
+    "n_manuscripts": 3,
+    "categories": ["NONSTANDARD_TERM", "POSSIBLE_MISUSE"],
+    "unverified_quotes": 0,
+    "sample_quotes": [
+      "The stabilization-trace cancellation argument yields the vanishing of the defect cycle on split abelian eightfolds.",
+      "Applying the stabilization-trace identity along the exceptional locus demonstrates algebraic triviality."
+    ],
+    "manuscripts": [
+      "Algebraicity of Weil classes on split abelian eightfolds",
+      "Algebraicity of Kuga–Satake Correspondences for K3 Surfaces",
+      "The rational Hodge conjecture for products of K3 surfaces"
+    ]
+  },
+  {
+    "term": "quasitrace current",
+    "count": 9,
+    "n_manuscripts": 2,
+    "categories": ["NONSTANDARD_TERM", "NOTATION_ISSUE"],
+    "unverified_quotes": 0,
+    "sample_quotes": [
+      "We define the quasitrace current $T_\\mu$ associated to the state on the exact $C^*$-algebra.",
+      "The bounded quasitrace current satisfies the cyclic boundary condition."
+    ],
+    "manuscripts": [
+      "Quasitrace current bounds for exact C*-algebras",
+      "Uniform tracial states on free group factors"
+    ]
+  },
+  {
+    "term": "torus-projection clock",
+    "count": 7,
+    "n_manuscripts": 2,
+    "categories": ["UNDEFINED_SHORTHAND"],
+    "unverified_quotes": 0,
+    "sample_quotes": [
+      "Using the torus-projection clock estimate, the particle trajectory avoids resonance up to time $T$.",
+      "The common-clock synchronization is bounded by the torus-projection clock error."
+    ],
+    "manuscripts": [
+      "Incompressible Box Transport and Finite Computation",
+      "Phase-space transport in divergence-free Hamiltonian flows"
+    ]
+  },
+  {
+    "term": "hypersymplectic deformation",
+    "count": 6,
+    "n_manuscripts": 2,
+    "categories": ["POSSIBLE_MISUSE", "NONSTANDARD_TERM"],
+    "unverified_quotes": 0,
+    "sample_quotes": [
+      "Taming implies compatibility under the continuous hypersymplectic deformation cone.",
+      "The cone-comparison dependency in the hypersymplectic deformation is strictly convex."
+    ],
+    "manuscripts": [
+      "Taming and hypersymplectic deformation",
+      "Symplectic structures on compact hyperkähler manifolds"
+    ]
+  },
+  {
+    "term": "honeycomb bridge mass",
+    "count": 5,
+    "n_manuscripts": 1,
+    "categories": ["NONSTANDARD_TERM"],
+    "unverified_quotes": 0,
+    "sample_quotes": [
+      "The honeycomb bridge mass provides a lower bound on the free energy decay exponent."
+    ],
+    "manuscripts": [
+      "Free energy scaling in diluted hexagonal spin glasses"
+    ]
+  },
+  {
+    "term": "semi-coordinate polynomial",
+    "count": 4,
+    "n_manuscripts": 1,
+    "categories": ["NONSTANDARD_TERM", "NOTATION_ISSUE"],
+    "unverified_quotes": 0,
+    "sample_quotes": [
+      "There exists a semi-coordinate polynomial $P \\in \\mathbb{C}[x_1,x_2,x_3,x_4]$ which is stably trivial."
+    ],
+    "manuscripts": [
+      "A stable-coordinate counterexample in four variables"
+    ]
+  }
+]
